@@ -3,8 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text to voice </title>
+    <title>Text to Voice Converter</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: 'YourPreferredFont', sans-serif; /* Add your preferred font */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+        margin-bottom: 20px;
+      }
+
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      select {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* Media query for screens smaller than 600px */
+
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 0.8em;
+        }
+
+        button {
+          padding: 8px 12px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="hero">
@@ -14,7 +78,7 @@
       <textarea placeholder="Write anything here..."></textarea>
       <div class="line">
         <select></select>
-        <button><img src="./images/play.png" />Listen</button>
+        <button><img src="./images/play.png" alt="Play icon" />Listen</button>
       </div>
     </div>
     <script src="script.js"></script>
