@@ -106,6 +106,13 @@ textarea::placeholder {
     justify-content: center
   }
 }
+@media only screen and (min-width: 600px)
+{
+  .foot
+  {
+    display: none;
+  }
+}
 
 button {
   background: var(--button);
@@ -142,4 +149,18 @@ select {
 p{
   padding-top: 20px;
   padding-bottom: 10px;
+}
+footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolderS;
+  height: 200px;
+  width: 100vw;
+  color: white;
+  background: var(--background);
+
+
 }
